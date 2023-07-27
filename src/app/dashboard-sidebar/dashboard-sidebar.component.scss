@@ -1,0 +1,64 @@
+.dashboard-sidebar {
+    background-color: #e5e5e5;
+    width: 250px;
+    padding: 10px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      /* Change 'display: flex' to 'display: block' */
+      display: block;
+  
+      li {
+        padding: 5px 10px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #d9d9d9;
+        }
+      }
+    }
+  
+    /* Add any other styling specific to the sidebar here */
+  }
+  .dashboard-sidebar .nav {
+    display: block;
+  }
+  
+  .search-form {
+    flex: 1;
+    justify-content: center;
+  }
+  .dashboard-sidebar  {
+    
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #2d455f1a;
+  width: 260px;
+  height: 100%;
+
+  padding: 10px;
+  /* Add any other sidebar styles here */
+
+  /* Make the sidebar fixed and prevent it from scrolling */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow-y: auto;
+  }
+  
+  #logo {
+    width: 141px;
+    height: 57px;
+}
+.main-content {
+  background-color: #f3faf8 !important;
+}
+.wrapper
+{
+         width: auto;
+    position: relative;
+}

@@ -1,0 +1,41 @@
+.dashboard-container {
+  display: flex;
+
+  background-color: #eef2f7;
+}
+
+/* Sidebar styles */
+
+
+/* Main content styles */
+.dashboard-main {
+  flex: 1; /* Allow the main content to fill the remaining space */
+  padding: 10px;
+  margin-left: 20%; 
+  margin-top: 30px;
+  /* Add any other main content styles here */
+}
+
+/* Header styles */
+.dashboard-header {
+  background-color: #ffffff;
+  box-shadow: 0 0 25px rgb(100 98 98 / 31%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  /* Add any other header styles here */
+
+  /* Make the header fixed and prevent it from scrolling */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 20%; /* Account for the width of the sidebar */
+  z-index: 3; /* Increase the z-index to keep it above both the sidebar and main content */
+}
+
+/* Content area styles */
+.dashboard-content {
+  margin-top: 60px; /* Adjust as needed to create space between header and content */
+  z-index: 1; /* Increase the z-index to keep it above the sidebar */
+  /* Add any other content area styles here */
+}

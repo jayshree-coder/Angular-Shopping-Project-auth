@@ -1,0 +1,28 @@
+
+  
+.navbar {
+    padding: 1rem;
+  }
+  
+    .navbar {
+      background-color: #ffffff !important;
+      margin: 20px 28px 39px  !important;
+      background: var(--iq-white);
+      border-radius: 15px;
+      margin: 20px 0 0;
+      box-shadow: 0 0 25px rgb(100 98 98 / 31%);
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 250px; /* Account for the width of the sidebar */
+      z-index: 1;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    
+      /* Add any other styling specific to the header here */
+    }  
+    .main-content {
+      background-color: #f3faf8 !important;
+  }
+  

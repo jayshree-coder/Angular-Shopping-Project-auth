@@ -1,0 +1,104 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e5e9f2;
+    border-radius: 0.25rem;
+    width: 450px;
+}
+.card-default .card-header {
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: none;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.app-brand {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid rgba(229, 233, 242, 0.25);
+}
+.text-dark {
+    color: #31343d !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.12rem + 2px);
+    padding: 0.56rem 1rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #e5e9f2;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.main-content {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8a909d;
+    text-align: left;
+   
+}
+.form-group input
+{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.12rem + 2px);
+    padding: 0.56rem 1rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #e5e9f2;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    margin-left: 9px;
+}
+.text-color {
+    color: #8a909d !important;
+}
+button.btn.btn-primary.btn-pill.mb-4 {
+    color: #ffffff;
+    background-color: #9e6de0;
+    border-color: #9e6de0;
+    padding: 0.56rem 1.5rem;
+    border-radius: 59px;
+}
+#logo {
+    width: 141px;
+    height: 57px;
+}
+.mt-10
+{
+    margin-top: 14px;
+}

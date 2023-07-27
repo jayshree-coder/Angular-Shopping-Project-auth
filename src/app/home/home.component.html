@@ -1,0 +1,76 @@
+<div class="container-fluid py-4">
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor="let image of images">
+        <div class="wrapper">
+          <img [src]="image.src" class="img-fluid" alt="Random slide">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+  <div class="container py-4" >
+    <div class="row">
+    <div class="col-md-8">
+        
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+        <p>{{extracontent}}</p>
+     
+        <button type="button" (click)="deleteHero()">Delete hero</button>
+
+        </div>
+        <div class="col-md-4">
+        <img alt="item" class="img-fluid" src="{{itemImageUrl}}">
+    </div>
+    </div>
+</div>
+
+<div class="image-container py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <img alt="shopping" class="img-fluid" src="{{contImage}}">
+      </div>
+      <div class="col-4">
+        <form #addressForm="ngForm" (ngSubmit)="onSubmit(addressForm.value)" (keyup)="setDirtyStatus()">
+          <div class="row">
+            <div class="col">
+              <h3>contact Us</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+             <hr>
+              <div class="form-group" [class.has-error]="fullnames.invalid && fullnames.touched" [class.has-success]="fullnames.valid">
+                <label class="control-label" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input required #fullnames="ngModel" class="form-control" type="text" id="fname" name="fullname" ngModel />
+                <span *ngIf="fullnames.invalid && fullnames.touched" class="help-block">Name is required</span>
+              </div>
+    
+              <div class="form-group" [class.has-error]="myemail.invalid && myemail.touched" [class.has-success]="myemail.valid">
+                <label class="control-label" for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input required #myemail="ngModel" class="form-control" email type="text" id="email" name="email" ngModel />
+                <span *ngIf="myemail.invalid && myemail.touched" class="help-block">Email is not valid</span>
+              </div>
+    
+              <div class="form-group" [class.has-error]="myphone.invalid && myphone.touched" [class.has-success]="myphone.valid">
+                <label class="control-label" for="phone"><i class="fa fa-envelope"></i> Phone Number</label>
+                <input required #myphone="ngModel" class="form-control" phone type="tel" id="phone" name="phone" ngModel />
+                <span *ngIf="myphone.invalid && myphone.touched" class="help-block">Phone Number required</span>
+                <span *ngIf="myphone.hasError('phoneInvalid')" class="help-block">Invalid Phone Number</span>
+
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="margin-top: 18px;"  [disabled]="!addressForm.valid">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="container py-7">
+    <img alt="item" class="img-fluid" src="{{offerImage}}">
+  </div>
+  <div class="container py-7 mb-5">
+    <img alt="offerImage" class="img-fluid" src="{{endImage}}">
+  </div>
+  

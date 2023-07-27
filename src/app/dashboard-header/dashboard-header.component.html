@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex justify-content-between align-items-center"> <!-- Added 'd-flex', 'justify-content-between', 'align-items-center' -->
+      <form class="d-flex"> <!-- Removed 'me-2' to center the search input -->
+        <input type="search" placeholder="Search" aria-label="Search" class="form-control">
+        <button type="submit" class="btn btn-outline-success">Search</button>
+      </form>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="bi bi-bell"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle"><i class="bi bi-person"></i></a>
+          <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-end">
+            <li><a href="#" class="dropdown-item">Profile</a></li>
+            <li><a href="#" class="dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>

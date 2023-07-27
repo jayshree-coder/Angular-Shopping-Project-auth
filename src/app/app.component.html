@@ -1,0 +1,13 @@
+<div class="app-container">
+  <ng-container *ngIf="currentRoute !== '/dashboard'">
+    <app-header></app-header>
+  </ng-container>
+  <div class="main-content">
+    <router-outlet></router-outlet> <!-- Include the home component here -->
+  </div>
+  <ng-container *ngIf="currentRoute !== '/dashboard'">
+    <footer>
+      <app-footer></app-footer> <!-- Include the footer component only once -->
+    </footer>
+  </ng-container>
+</div>
